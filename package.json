@@ -1,0 +1,22 @@
+{
+  "name": "dataflow-automator",
+  "version": "1.0.0",
+  "description": "Enterprise Multi-Source Data Ingestion, Transformation & Executive Report Generator",
+  "main": "automate.js",
+  "scripts": {
+    "start": "node automate.js",
+    "watch": "node automate.js --watch",
+    "generate-mock": "node automate.js --generate-mock",
+    "test": "node test_pipeline.js"
+  },
+  "keywords": [
+    "automation",
+    "data-pipeline",
+    "etl",
+    "report-generation",
+    "data-transformation",
+    "analytics"
+  ],
+  "author": "Antigravity Automation Suite",
+  "license": "MIT"
+}

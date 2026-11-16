@@ -1,0 +1,46 @@
+{
+  "system": {
+    "name": "DataFlow Automator",
+    "version": "1.0.0",
+    "environment": "production"
+  },
+  "paths": {
+    "raw_input_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "reports_dir": "reports"
+  },
+  "rules": {
+    "supported_categories": [
+      "Electronics",
+      "Apparel",
+      "Home & Kitchen",
+      "Books & Media",
+      "Sports & Outdoors",
+      "Health & Beauty"
+    ],
+    "category_aliases": {
+      "elec": "Electronics",
+      "electronic": "Electronics",
+      "tech": "Electronics",
+      "clothing": "Apparel",
+      "wear": "Apparel",
+      "home": "Home & Kitchen",
+      "kitchen": "Home & Kitchen",
+      "books": "Books & Media",
+      "media": "Books & Media",
+      "sports": "Sports & Outdoors",
+      "fitness": "Sports & Outdoors",
+      "health": "Health & Beauty",
+      "beauty": "Health & Beauty"
+    },
+    "currency_symbol": "$",
+    "anomaly_thresholds": {
+      "high_order_value_usd": 2000.00,
+      "excessive_quantity_units": 50,
+      "high_branch_refund_pct": 15.0,
+      "low_margin_pct": 5.0
+    },
+    "default_customer_segment": "Standard",
+    "standard_tax_rate": 0.08
+  }
+}
